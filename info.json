@@ -1,11 +1,9 @@
 {
-  "name": "OutpostPlanner",
-  "version": "1.1.6",
-  "title": "Outpost Planner",
-  "author": "bob809",
-  "description": "Automatically build mining outposts.\nDependencies: PlannerCore",
+  "name": "OutpostPlanner1-1",
+  "version": "1.2.1",
+  "title": "Outpost Planner for 1.1",
+  "author": "ChucklesTheBeard",
+  "description": "Automatically build mining outposts.\nDependencies: PlannerCore\n\nOriginal by bob809\nPatches by erkle64 and Darklaser\nWill be obsoleted if bob809 updates their version.",
   "factorio_version": "1.1",
-  "dependencies": ["base >= 1.1.6",
-    "PlannerCore >= 0.2.4",
-    "! Cursed-FMD"]
+  "dependencies": ["base >= 1.1", "PlannerCore1-1 >= 0.3", "! Cursed-FMD", "! OutpostPlanner"]
 }
