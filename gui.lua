@@ -1,4 +1,4 @@
-require("mod-gui")
+local mod_gui = require("mod-gui")
 require("util")
 require("on_init")
 require("example_blueprints")
@@ -737,8 +737,8 @@ local function parse_blueprint(entities, conf)
     blueprint_data.poles = util.strip_entities_of_type(entities, "electric-pole")
 
     local bounding_box = util.find_blueprint_bounding_box(entities)
-    local shift_x = math.ceil((-bounding_box.left_top.x) - 0.5) + 0.5
-    local shift_y = math.ceil((-bounding_box.left_top.y) - 0.5) + 0.5
+	  local shift_x = math.ceil(-bounding_box.left_top.x)
+	  local shift_y = math.ceil(-bounding_box.left_top.y)
     util.shift_blueprint(entities, shift_x, shift_y)
     util.shift_blueprint(blueprint_data.poles, shift_x, shift_y)
 
